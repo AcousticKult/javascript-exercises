@@ -1,15 +1,7 @@
-const removeFromArray = function(myArray, item) {
-    let finalArray = [];
-    
-    // cycle through the array
-    for (let i = 0; i < myArray; i++) {
-        // identify which arrayItem is same as item
-        if (myArray[i] !== item) {
-            finalArray.push(myArray[i]);
-        }
-    }
+const removeFromArray = function(myArray) {
+    myArray.splice(arguments, 1)    
 
-    return finalArray;
+    return myArray;
 };
 
 // Do not edit below this line
