@@ -1,6 +1,9 @@
 const removeFromArray = function(myArray) {
-    myArray.splice(arguments, 1)    
-
+    // USE FOR LOOP OR FOR...OF TO COMPARE myArray and arguments?
+    // if (arguments[0, ...spread? ...rest?]) === any of myArray.elements) {
+        // remove myArray.element that is same as arguments[n]
+        // myArray.splice(arguments, 1)    
+    // }
     return myArray;
 };
 
