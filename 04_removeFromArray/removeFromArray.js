@@ -1,11 +1,11 @@
-const removeFromArray = function(myArray) {
+const removeFromArray = function(myArray, ...moreArgs) {
     // USE FOR LOOP OR FOR...OF TO COMPARE myArray and arguments?
-    // for (element of myArray) {
-        // if (arguments[0, ...spread? ...rest?]) === myArray.element) {
-            // remove myArray.element that is same as arguments[n]
-            // myArray.splice(arguments, 1)    
-        // }
-    // }
+    for (let x of myArray) {
+        if (x === moreArgs[0]) {
+            // remove myArray[x] that is same as moreArgs[n]
+            myArray.splice(myArray.indexOf(x), 1)    
+        }
+    }
     return myArray;
 };
 
