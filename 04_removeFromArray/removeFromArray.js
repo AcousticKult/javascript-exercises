@@ -1,10 +1,11 @@
 const removeFromArray = function(myArray, ...moreArgs) {
-    // USE FOR LOOP OR FOR...OF TO COMPARE myArray and arguments?
     for (let x of myArray) {
         for (let n of moreArgs) {
-            if (x === n) {
+            if (n === x) {
                 myArray.splice(myArray.indexOf(x), 1);
             }
+            continue;
+        // continue;
         }
     }
     return myArray;
